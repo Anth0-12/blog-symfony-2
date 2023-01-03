@@ -4,11 +4,18 @@
 
 #navigation {
     height: 15vh;
-    width: 100vw;
+    width: 100%;
 
-    background-color: black;
+    background-color: rgba(89, 209, 125, 0.801);
+    
+    border-bottom: 1px solid rgb(29, 116, 216);
+    box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.555);
+
     display: flex;
     flex-direction: column;
+
+    position: sticky;
+    top: 0;
 }
 
 .titre {
@@ -21,30 +28,42 @@
 }
 
 h1 {
-    color:white;
+    color:rgb(255, 255, 255);
+
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
+
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 240%;
 }
 
 .accueil {
     height: 30%;
-    width: 100%;
+    width: 80%;
 
     display: flex;
     justify-content: center ;
     align-items: center;
 
     gap: 20%;
-    margin-left: 20%;
+    padding-left: 20%;
+
+    font-family: 'Fira Sans', sans-serif;
+
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
 }
 
 .connexion {
     height: 100%;
     width: 20%;
 
-    gap: 20%;
+    gap: 10%;
 
     display: flex;
     justify-content: center ;
     align-items: center;
+
+    position: relative;
+    left: 10%;
 }
 
 .inscription {
@@ -62,6 +81,12 @@ h1 {
     display: flex;
     justify-content: space-around ;
     align-items: center;
+
+    position: relative;
+    left: 7.5%;
+
+    font-size: 120%;
+    font-weight: 600;
 }
 
 a {
@@ -73,5 +98,5 @@ a {
     align-items: center;
 
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }

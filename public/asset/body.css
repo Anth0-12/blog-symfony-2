@@ -40,7 +40,7 @@ h2 {
     color: rgb(255, 255, 255);
     text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
 
-    background-color: rgba(89, 209, 125, 0.801);
+    background-color: rgb(89, 209, 125);
 
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ h2 {
     height: 18%;
     width: 100%;
 
-    background-color: rgba(89, 209, 125, 0.801);
+    background-color: rgb(89, 209, 125);
 
     flex-wrap: wrap;
 

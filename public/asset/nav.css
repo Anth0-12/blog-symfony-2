@@ -6,9 +6,8 @@
     height: 15vh;
     width: 100%;
 
-    background-color: rgba(89, 209, 125, 0.801);
+    background-color: rgb(89, 209, 125);
     
-    border-bottom: 1px solid rgb(29, 116, 216);
     box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.555);
 
     display: flex;

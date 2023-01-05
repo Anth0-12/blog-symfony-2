@@ -5,12 +5,23 @@
         <h1>Blog</h1>
     </div>
 
+
+
+
     <div class="accueil">
-        <div class="categories"><a href="">Catégories</a> </div>
+
+        <div class="home">
+            <a href="{{ path('app_home') }}">home</a>
+        </div>
 
     {% if app.user %}
-    <div class="connexion">
-            <div class="inscription"><a href="">Se déconnecter</a> </div>
+        <div class="creer"><a href="{{ path('app_article_new') }}"> Créer un article</a> </div>
+
+        <div class="categories"><a href="">Catégories</a> </div>
+    
+    
+        <div class="connexion">
+            <div class="inscription"><a href="{{ path('app_logout') }}">Se déconnecter</a> </div>
             <div class="inscription"><a href="">Profil</a> </div>
         </div>
     {% else %}

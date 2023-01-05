@@ -43,12 +43,22 @@ h1 {
     justify-content: center ;
     align-items: center;
 
-    gap: 20%;
-    padding-left: 20%;
+    gap: 10%;
+    padding-left: 10%;
 
     font-family: 'Fira Sans', sans-serif;
 
     text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
+}
+
+.creer {
+    height: 100%;
+    width: 20%;
+}
+
+.home {
+    height: 100%;
+    width: 10%;
 }
 
 .connexion {

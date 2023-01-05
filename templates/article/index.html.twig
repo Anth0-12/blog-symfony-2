@@ -3,32 +3,38 @@
 {% block title %}Article index{% endblock %}
 
 {% block body %}
-    <h1>Tous les articles</h1>
 
-{% for article in articles %}
     <div id="contenu-articles">
 
-        <div class="titre-article">
-            {{ article.title }}
-        </div>
+{% for article in articles %}
 
-        <div class="contenu-article">
-            {{ article.content }}
-        </div>
+<div class="article-complet">
+    <h3 class="titre-article">
+        {{ article.title }}
+    </h3>
 
-        <div class="date-article">
-            {{ article.date ? article.date|date('Y-m-d H:i:s') : '' }}
-        </div>
-
-        <div class="actions-article">
-            <a href="{{ path('app_article_show', {'id': article.id}) }}">show</a>
-            <a href="{{ path('app_article_edit', {'id': article.id}) }}">edit</a>
-        </div>
-{% else %}
-                <span colspan="5">no records found</span>
+    <div class="contenu-article">
+        {{ article.content }}
     </div>
+
+    <div class="date-article">
+        {{ article.date ? article.date|date('Y-m-d') : '' }}
+    </div>
+
+    <div class="actions-article">
+        <a href="{{ path('app_article_show', {'id': article.id}) }}" class="actions">Voir</a>
+        <a href="{{ path('app_article_edit', {'id': article.id}) }}" class="actions">Modifier</a>
+    </div>
+</div>
+        
+
+{% else %}
+
+        <span colspan="5">no records found</span>
+    
 {% endfor %}
 
+</div>
     {# <table class="table">
         <thead>
             <tr>

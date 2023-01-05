@@ -6,9 +6,25 @@
 
 {{ form_start(form) }}
 
-<div class="titre">
-    {{ form_widget(form.title,{'attr':{'class':'champ_texte'}}) }}
-</div>
+    <div class="titre-article">
+        <h4>Titre</h4>
+            {{ form_widget(form.title,{'attr':{'class':'champ_texte'}}) }}
+    </div>
+
+    <div class="contenu">
+        <h4>Contenu</h4>
+            {{ form_widget(form.content,{'attr':{'class':'champ_texte'}}) }}
+    </div>
+
+    <div class="auteur">
+        <h4>Auteur</h4>
+            {{ form_widget(form.author,{'attr':{'class':'champ_texte'}}) }}
+    </div>
+
+    <div class="categorie">
+        <h4>Catégorie</h4>
+            {{ form_widget(form.category,{'attr':{'class':'champ_texte'}}) }}
+    </div>
     
     <button class="btn">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}

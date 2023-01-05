@@ -18,6 +18,10 @@
             <a href="{{ path('app_article_index') }}" class="lien-menu">Articles</a>
         </div>
 
+        <div class="ajout_category">
+            <a href="{{ path('app_category_new') }}" class="lien-menu">ajouter une catégorie</a>
+        </div>
+
     {% if app.user %}
         <div class="creer"><a href="{{ path('app_article_new') }}" class="lien-menu"> Créer un article</a> </div>
 

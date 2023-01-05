@@ -3,9 +3,33 @@
 {% block title %}Article index{% endblock %}
 
 {% block body %}
-    <h1>Article index</h1>
+    <h1>Tous les articles</h1>
 
-    <table class="table">
+{% for article in articles %}
+    <div id="contenu-articles">
+
+        <div class="titre-article">
+            {{ article.title }}
+        </div>
+
+        <div class="contenu-article">
+            {{ article.content }}
+        </div>
+
+        <div class="date-article">
+            {{ article.date ? article.date|date('Y-m-d H:i:s') : '' }}
+        </div>
+
+        <div class="actions-article">
+            <a href="{{ path('app_article_show', {'id': article.id}) }}">show</a>
+            <a href="{{ path('app_article_edit', {'id': article.id}) }}">edit</a>
+        </div>
+{% else %}
+                <span colspan="5">no records found</span>
+    </div>
+{% endfor %}
+
+    {# <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
@@ -33,7 +57,7 @@
             </tr>
         {% endfor %}
         </tbody>
-    </table>
+    </table> #}
 
     <a href="{{ path('app_article_new') }}">Create new</a>
 {% endblock %}

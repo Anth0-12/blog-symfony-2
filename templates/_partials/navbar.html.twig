@@ -11,7 +11,7 @@
     <div class="accueil">
 
         <div class="home">
-            <a href="{{ path('app_home') }}">home</a>
+            <a href="{{ path('app_home') }}">Accueil</a>
         </div>
 
     {% if app.user %}
@@ -22,7 +22,7 @@
     
         <div class="connexion">
             <div class="inscription"><a href="{{ path('app_logout') }}">Se déconnecter</a> </div>
-            <div class="inscription"><a href="">Profil</a> </div>
+            <div class="inscription"><a href="{{ path('app_user_index') }}">Profil</a> </div>
         </div>
     {% else %}
         <div class="connexion">

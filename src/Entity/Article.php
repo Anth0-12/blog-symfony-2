@@ -35,6 +35,7 @@ class Article
     public function __construct()
     {
         $this->category = new ArrayCollection();
+        $this->date = new \DateTimeImmutable();
     }
 
     public function getId(): ?int

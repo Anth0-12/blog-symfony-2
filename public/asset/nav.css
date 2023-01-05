@@ -37,13 +37,11 @@ h1 {
 
 .accueil {
     height: 30%;
-    width: 80%;
+    width: 77%;
 
     display: flex;
     justify-content: center ;
     align-items: center;
-
-    gap: 5%;
 
     font-family: 'Fira Sans', sans-serif;
 
@@ -52,7 +50,7 @@ h1 {
 
 .creer {
     height: 100%;
-    width: 20%;
+    width: 15%;
 }
 
 .home {
@@ -71,7 +69,7 @@ h1 {
     align-items: center;
 
     position: relative;
-    left: 25%;
+    left: 35%;
 }
 
 .inscription {
@@ -97,7 +95,7 @@ h1 {
     font-weight: 600;
 }
 
-a {
+.lien-menu {
     height: 100%;
     width: 100%;
 

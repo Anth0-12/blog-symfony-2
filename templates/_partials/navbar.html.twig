@@ -11,23 +11,27 @@
     <div class="accueil">
 
         <div class="home">
-            <a href="{{ path('app_home') }}">Accueil</a>
+            <a href="{{ path('app_home') }}" class="lien-menu">Accueil</a>
+        </div>
+
+        <div class="home">
+            <a href="{{ path('app_article_index') }}" class="lien-menu">Articles</a>
         </div>
 
     {% if app.user %}
-        <div class="creer"><a href="{{ path('app_article_new') }}"> Créer un article</a> </div>
+        <div class="creer"><a href="{{ path('app_article_new') }}" class="lien-menu"> Créer un article</a> </div>
 
-        <div class="categories"><a href="">Catégories</a> </div>
+        <div class="categories"><a href="" class="lien-menu">Catégories</a> </div>
     
     
         <div class="connexion">
-            <div class="inscription"><a href="{{ path('app_logout') }}">Se déconnecter</a> </div>
-            <div class="inscription"><a href="{{ path('app_user_index') }}">Profil</a> </div>
+            <div class="inscription"><a href="{{ path('app_logout') }}" class="lien-menu">Se déconnecter</a> </div>
+            <div class="inscription"><a href="{{ path('app_user_index') }}" class="lien-menu">Profil</a> </div>
         </div>
     {% else %}
         <div class="connexion">
-            <div class="inscription"><a href="{{ path('app_login') }}">Se connecter</a> </div>
-            <div class="inscription"><a href="{{ path('app_register') }}">S'inscrire</a> </div>
+            <div class="inscription"><a href="{{ path('app_login') }}" class="lien-menu">Se connecter</a> </div>
+            <div class="inscription"><a href="{{ path('app_register') }}" class="lien-menu">S'inscrire</a> </div>
         </div>
      {% endif %}
     </div>

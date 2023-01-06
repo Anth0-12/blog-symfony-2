@@ -513,6 +513,119 @@ h2 {
 
 
 
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+        /*!--------------------------------------- page creation article -----------------------------*/
+        /*!-------------------------------------------------------------------------------------------*/
+        
+#creation_article {
+    height: 70vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creation_article {
+    height: 90%;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Fira Sans', sans-serif;
+
+    gap: 5%;
+
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.425);
+    border-radius: 10px;
+
+}
+
+.titre-crea-article {
+    height: 15%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+        .champ_titre {
+            height: 100%;
+            width: 50%;
+
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.425);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.26);
+        }
+
+.contenu {
+    height: 80%;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+        .champ_contenu {
+            height: 90%;
+            width: 80%;
+
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.425);
+            border: 1px solid rgba(0, 0, 0, 0.26);
+            border-radius: 5px;
+        }
+
+.auteur {
+    height: 20%;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+        .champ_auteur {
+            height: 40%;
+            width: 30%;
+
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.425);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.26);
+        }
+
+.categorie {
+    height: 20%;
+    width: 80%;
+     
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+        
+        .champ_categorie {
+            height: 40%;
+            width: 30%;
+
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.425);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.26);
+        }
+        
+        /*!--------------------------------------- fin creation article -----------------------------*/
+        /*!------------------------------------------------------------------------------------------*/
+
+
+
 /*---------------------------------------------------------------------------------------------------------------------------*/
 
 

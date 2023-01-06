@@ -6,25 +6,35 @@
 
 {{ form_start(form) }}
 
-    <div class="titre-crea-article">
-        <h4>Titre</h4>
-            {{ form_widget(form.title,{'attr':{'class':'champ_texte'}}) }}
+<div id="creation_article">
+
+    <div class="creation_article">
+
+        <div class="titre-crea-article">
+            <h4>Titre</h4>
+                {{ form_widget(form.title,{'attr':{'class':'champ_titre'}}) }}
+        </div>
+
+        <div class="contenu">
+            <h4>Contenu</h4>
+                {{ form_widget(form.content,{'attr':{'class':'champ_contenu'}}) }}
+        </div>
+
+        <div class="auteur">
+            <h4>Auteur</h4>
+                {{ form_widget(form.author,{'attr':{'class':'champ_auteur'}}) }}
+        </div>
+
+        <div class="categorie">
+            <h4>Catégorie</h4>
+                {{ form_widget(form.category,{'attr':{'class':'champ_categorie'}}) }}
+        </div>
+            
+        <button class="btn">{{ button_label|default('Enregistrer') }}</button>
     </div>
 
-    <div class="contenu">
-        <h4>Contenu</h4>
-            {{ form_widget(form.content,{'attr':{'class':'champ_texte'}}) }}
-    </div>
+</div>
 
-    <div class="auteur">
-        <h4>Auteur</h4>
-            {{ form_widget(form.author,{'attr':{'class':'champ_texte'}}) }}
-    </div>
-
-    <div class="categorie">
-        <h4>Catégorie</h4>
-            {{ form_widget(form.category,{'attr':{'class':'champ_texte'}}) }}
-    </div>
     
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    
 {{ form_end(form) }}

@@ -8,14 +8,16 @@
     {% endfor %}
 
     <h1>Register</h1>
-
+<div>
     {{ form_start(registrationForm) }}
         {{ form_row(registrationForm.email) }}
         {{ form_row(registrationForm.pseudo) }}
         {{ form_row(registrationForm.plainPassword, {
             label: 'Password'
         }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+    {{ form_row(registrationForm.agreeTerms) }}
+</div>
+    
 
         <button type="submit" class="btn">Register</button>
     {{ form_end(registrationForm) }}

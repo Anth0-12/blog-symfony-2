@@ -121,6 +121,115 @@ h1 {
 
 
 
+        /*!--------------------------------------- login -----------------------------*/
+        /*!---------------------------------------------------------------------------*/
+        
+#login {
+    height: 70vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    height: 70%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Fira Sans', sans-serif;
+
+    background-color: rgba(243, 243, 243, 0.664);
+    
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.425);
+
+    border-radius: 10px;
+}
+
+.interface-login {
+    height: 70%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titre-connexion {
+    height: 50px;
+    width: 35%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(89, 209, 125);
+
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.425);
+
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
+    font-size: 130%;
+
+    border-radius: 5px;
+}
+
+.champs{
+    height: 25%;
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.champ {
+    height: 25px;
+    width: 100%;
+
+    border: 1px solid rgb(89, 209, 125);
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.425);
+}
+
+.bouton-connexion {
+    height: 35px;
+    width: 130px;
+
+    background-color: rgb(89, 209, 125);
+
+    border: 1px solid rgb(89, 209, 125);
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.425);
+
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
+    font-size: 90%;
+    font-weight: 600;
+}
+
+.bouton-connexion:hover {
+    cursor: pointer;
+}
+
+
+        /*!--------------------------------------- fin login -----------------------------*/
+        /*!-------------------------------------------------------------------------------*/
+
+
+        
+/*---------------------------------------------------------------------------------------------------------------------------*/
+        
+
         /*!--------------------------------------- contenu page acceuil -----------------------------*/
         /*!------------------------------------------------------------------------------------------*/
 
@@ -137,7 +246,6 @@ h1 {
     gap: 3%;
     
     flex-wrap: wrap;
-    
 }
 
 /* .ligne {
@@ -189,11 +297,12 @@ h2 {
 
 .description {
     height: 18%;
-    width: 100%;
+    width: 98%;
 
     background-color: rgb(89, 209, 125);
 
     flex-wrap: wrap;
+    overflow: hidden;
 
     display: flex;
     justify-content: center;
@@ -203,6 +312,8 @@ h2 {
 
     color: rgb(255, 255, 255);
     text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
+
+    padding-left: 2%;
 }
 
         /*!--------------------------------------- fin contenu page acceuil -----------------------------*/
@@ -213,8 +324,8 @@ h2 {
 
 
 
-        /*!--------------------------------------- contenu page acceuil -----------------------------*/
-        /*!------------------------------------------------------------------------------------------*/
+        /*!--------------------------------------- contenu page tous articles -----------------------------*/
+        /*!------------------------------------------------------------------------------------------------*/
         
 #contenu-articles {
     height: 70%;
@@ -224,8 +335,6 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    row-gap: 5%;
 }     
 
 .article-complet {
@@ -236,10 +345,14 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    margin-top: 2%;
+
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.425);
 }
 
 .titre-article {
-    height: 10%;
+    height: 15%;
     width: 100%;
 
     display: flex;
@@ -247,21 +360,27 @@ h2 {
     align-items: center;
 
     font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(89, 209, 125);
+
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
 }   
 
 .contenu-article {
-    height: 50%;
+    height: 80%;
     width: 100%;
+    padding-top: 1%;
 
     display: flex;
     justify-content: center;
-    align-items: center;
 
     font-family: 'Fira Sans', sans-serif;
+    flex-wrap: wrap;
+    overflow: hidden;
 }   
 
 .date-article {
-    height: 10%;
+    height: 15%;
     width: 100%;
 
     display: flex;
@@ -269,6 +388,7 @@ h2 {
     align-items: center;
 
     font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(231, 231, 231);
 }   
 
 .actions-article {
@@ -281,7 +401,7 @@ h2 {
 
     font-family: 'Fira Sans', sans-serif;
 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+    background-color: rgb(231, 231, 231);
 
     gap: 5%;
 }  
@@ -297,9 +417,100 @@ h2 {
     color: rgb(0, 0, 0);
 }
 
-        /*!--------------------------------------- contenu page acceuil -----------------------------*/
-        /*!------------------------------------------------------------------------------------------*/
+.creer-article {
+    height: 40px;
+    width: 230px;
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
+
+    margin-top: 1%;
+    margin-bottom: 5%;
+
+    background-color: rgb(89, 209, 125);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.425);
+}
+
+        /*!--------------------------------------- contenu page tous articles -----------------------------*/
+        /*!------------------------------------------------------------------------------------------------*/
         
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+        
+        /*!--------------------------------------- contenu page un article -----------------------------*/
+        /*!---------------------------------------------------------------------------------------------*/
+        
+#page_article {
+    height: 70vh;
+    width: 100%; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.affichage_contenu_article {
+    height: 90%;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.titre_contenu_article {
+    height: 8%;
+    width: 100%;
+
+    margin-bottom: 2%;
+
+    background-color: rgb(89, 209, 125);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.contenu_article {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.date_contenu_article {
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+        
+        /*!--------------------------------------- fin contenu page un article -----------------------------*/
+        /*!-------------------------------------------------------------------------------------------------*/
+
 
 
 /*---------------------------------------------------------------------------------------------------------------------------*/
